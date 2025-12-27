@@ -10,7 +10,7 @@ keywords:
   - teaching
   - scientific writing
   - journalist
----
+...
 
 ## Education
 {%newthought 'CAS in Higher Education' %}{% marginnote 'unibe2020' '2020 University of Bern' %}

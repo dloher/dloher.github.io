@@ -434,8 +434,8 @@ header > nav.group, body footer {
 }
 
 nav.group a.active { font-weight: bold; }
-nav.group a.active:before{ content:"\0003e\000a0"; } // escaped unicode for the carats and then a space on active menu links
-nav.group a.active:after{ content:"\000a0\0003c" ;}
+nav.group a.active:before{ content:"⟨"; } // changed carats to ⟨ and ⟩
+nav.group a.active:after{ content:"⟩" ;}
 
 header > nav  a{
   font-size: 1.2rem;
