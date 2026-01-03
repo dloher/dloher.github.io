@@ -16,17 +16,17 @@ keywords:
 
 ## Education
 
-{%newthought '2016' %} PhD in Social Anthropology{% marginnote 'unibe2016' 'University of Bern' %}
+{%newthought '2016' %} PhD in Social Anthropology{% marginnote 'unibe2016' 'University of Bern, Switzerland' %}
 
-{%newthought '2010' %} M.A. in Social Anthropology{% marginnote 'unibe2010' 'University of Bern' %} *(Major in Anthropology of Transnationalism and the State, Minor in Philosophy)*
+{%newthought '2010' %} M.A. in Social Anthropology{% marginnote 'unibe2010' 'University of Bern, Switzerland' %} *(Major in Anthropology of Transnationalism and the State, Minor in Philosophy)*
 
-{%newthought '2007' %} B.A. in Social Anthropology {% marginnote 'unibe2007' 'University of Bern' %} *(Major in Social Anthropology, Minor in Philosophy)*
+{%newthought '2007' %} B.A. in Social Anthropology {% marginnote 'unibe2007' 'University of Bern, Switzerland' %} *(Major in Social Anthropology, Minor in Philosophy)*
 
-{%newthought '2002' %} Teaching Diploma {% marginnote 'rorschach2002' '2002 University of Teacher Education Rorschach' %}
+{%newthought '2002' %} Teaching Diploma {% marginnote 'rorschach2002' 'University of Teacher Education Rorschach, Switzerland' %}
 
 ## Continuing Professional Education
 
-{%newthought '2020' %} CAS in Higher Education{% marginnote 'unibe2020' '2020 University of Bern' %}
+{%newthought '2020' %} CAS in Higher Education{% marginnote 'unibe2020' 'University of Bern, Switzerland' %}
 
 
 ## Work Experience
