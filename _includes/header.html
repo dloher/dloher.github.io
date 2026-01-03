@@ -1,4 +1,5 @@
 <!--- Header and nav template site-wide -->
+<!--     
 <header>
 	{% if site.header == true %}
 		<h1 class="header-title"><a href="{{site.baseurl}}/">{{ site.title }}</a></h1>
@@ -8,7 +9,7 @@
 		{% endif %}
 	{% endif %}
 
-    <nav class="group">
+	<nav class="group">
 	{% assign pg = site.pages | sort: "weight" %}
 	{% for node in pg %}
 		{% unless node.nav_exclude or node.url contains ".css" or node.url contains ".xml"%}
@@ -19,5 +20,36 @@
 		    {% endif %}
 	    {% endunless %}
   	{% endfor %}
-	</nav>
+	</nav> 
+-->
+
+<header>
+	{% if site.header == true %}
+		<h1 class="header-title"><a href="{{site.baseurl}}/">{{ site.title }}</a></h1>
+		{% unless site.subtitle == "" or site.subtitle == nil %}
+			<h2 class="header-subtitle">{{ site.subtitle }}</h2>
+    {% endunless %}
+	{% endif %}
+
+
+  <nav class="group">
+    {%- assign pg = site.pages | sort: "weight" %}
+    {%- for node in pg %}
+      {%- if node.nav_exclude or node.url contains ".css" or node.url contains ".scss" or node.url contains ".xml" %}
+        {%- continue %}
+      {%- endif %}
+
+      {%- assign title = node.nav_title | default: node.title %}
+      {%- unless title and title != "" %}
+        {%- continue %}
+      {%- endunless %}
+
+        <a href="{{node.url | prepend: site.baseurl}}"
+          {%- if page.url == node.url %} class="active" {% endif -%}
+        >
+          {{ title }}
+        </a>
+    {%- endfor %}
+  </nav>
+
 </header>
