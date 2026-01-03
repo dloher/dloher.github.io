@@ -446,7 +446,7 @@ header > nav  a{
   padding-top: 1.5rem;
   text-decoration: none;
   display: inline-block;
-  float: left;
+  float: none; /* instead of float left to left-align nav-bar items */
   margin-top: 0;
   margin-bottom: 0;
   padding-right: 2rem;
@@ -479,11 +479,12 @@ ul.footer-links li{
 body.full-width, .content-listing, ul.content-listing li.listing{ width: 90%;
        margin-left: auto;
        margin-right: auto;
-       padding: 0% 5%;
+       padding: 12.5%, 5%; // full-width keeps left padding of default style
 
 }
 .full-width article p{
-  width: 90%;
+  width: auto;
+  max-width: 87.5%;
 }
 
 
