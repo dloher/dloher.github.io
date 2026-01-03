@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Talks
-subtitle: Selection of Talks and Presentations
+title: Selection of Talks and Presentations
+nav_title: Talks
 weight: 4
-last_modified_at: 2022-02-26
+last_modified_at: 2025-12-26
 keywords:
   - presentations
   - social anthropology

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Publications
-subtitle: List of Publications
+title: List of Publications
+nav_title: Publications
 weight: 3
 last_modified_at: 2022-02-26
 keywords:
