@@ -1,56 +1,287 @@
----
-layout: null
-sitemap:
-  exclude: 'yes'
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-    {% unless post.published == false %}
+  
+    
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.sitemap.lastmod %}
-        <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif post.date %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      {% if post.sitemap.changefreq %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% else %}
+      <loc>https://dloher.ch/articles/blog/posts/2023/11/03/future-skills.html</loc>
+      
+        <lastmod>2023-11-03T00:00:00+01:00</lastmod>
+      
+      
         <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if post.sitemap.priority %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% else %}
+      
+      
         <priority>0.5</priority>
-      {% endif %}
+      
     </url>
-    {% endunless %}
-  {% endfor %}
-  {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" %}
+    
+  
+    
     <url>
-      <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
-      {% if page.sitemap.lastmod %}
-        <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif page.date %}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      {% if page.sitemap.changefreq %}
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-      {% else %}
+      <loc>https://dloher.ch/articles/blog/posts/2022/10/17/dghd50-paderborn.html</loc>
+      
+        <lastmod>2022-10-17T00:00:00+02:00</lastmod>
+      
+      
         <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if page.sitemap.priority %}
-        <priority>{{ page.sitemap.priority }}</priority>
-      {% else %}
-        <priority>0.3</priority>
-      {% endif %}
+      
+      
+        <priority>0.5</priority>
+      
     </url>
-    {% endunless %}
-  {% endfor %}
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/articles/blog/posts/2022/02/24/feedback-literacy.html</loc>
+      
+        <lastmod>2022-02-24T00:00:00+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/articles/blog/posts/2022/02/15/commmunities-of-practice.html</loc>
+      
+        <lastmod>2022-02-15T00:00:00+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/articles/blog/posts/2021/08/12/hochschuldidaktik.html</loc>
+      
+        <lastmod>2021-08-12T00:00:00+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/articles/blog/posts/2021/07/05/soziale-arbeit.html</loc>
+      
+        <lastmod>2021-07-05T00:00:00+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/articles/blog/posts/2021/05/15/tufte-css.html</loc>
+      
+        <lastmod>2021-05-15T00:00:00+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+  
+    
+    <url>
+      <loc>https://dloher.ch/page/cv</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/blog/</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/assets/css/latex.css</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/assets/css/main.css</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/portfolio/</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/page/publications</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/page/talks</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/page/teaching</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/assets/css/latex.css.map</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://dloher.ch/assets/css/main.css.map</loc>
+      
+        <lastmod>2026-01-03T15:57:50+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
 </urlset>
